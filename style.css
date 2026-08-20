@@ -1,0 +1,489 @@
+/* Reset de Estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Barra de Navegación */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+  padding: 1rem 2.5rem;
+  border-bottom: 3px solid #E0001A;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo-puma-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.brand-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+}
+
+.menu a {
+  color: #cccccc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #E0001A;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.6)),
+              url('https://d3jky06km58rdx.cloudfront.net/assets/images/store/san-salvador/zCFtCvj0UiQnfK5KP7tWcqoHXMohcUAHJYsYyVbO.webp') center/cover; no-repeat;
+ min-height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tag-hero {
+  background-color: #E0001A;
+  color: #ffffff;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+  margin: 1rem 0 0.5rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #E0001A;
+  color: #ffffff;
+}
+
+/* Contenedor Principal */
+.contenedor {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Sección Planteamiento Escolar */
+.seccion-proyecto {
+  background-color: #141414;
+  border-left: 5px solid #E0001A;
+  padding: 1.8rem;
+  border-radius: 4px;
+  margin-bottom: 4rem;
+}
+
+.seccion-proyecto h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.grid-proyecto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.caja-info h3 {
+  color: #E0001A;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.caja-info p {
+  color: #aaaaaa;
+  font-size: 0.95rem;
+}
+
+/* Grilla de Productos */
+.titulo-seccion {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.tarjeta-producto {
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-5px);
+  border-color: #E0001A;
+}
+
+.imagen-box {
+  position: relative;
+  height: 220px;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.imagen-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.badge-cat {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  text-transform: uppercase;
+}
+
+.info-box {
+  padding: 1.2rem;
+  background-color: #141414;
+}
+
+.info-box h3 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.info-box p {
+  font-size: 0.85rem;
+  color: #888888;
+  margin-bottom: 1.2rem;
+  height: 40px;
+}
+
+.precio-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.precio {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.btn-cart {
+  background-color: #E0001A;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+
+.btn-cart:hover {
+  background-color: #b30014;
+}
+
+/* Formulario y Contacto */
+.seccion-formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  background-color: #141414;
+  padding: 2.5rem;
+  border-radius: 6px;
+  margin-bottom: 3rem;
+}
+
+.col-form h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #E0001A;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.col-form p {
+  color: #888888;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.form-puma .campo {
+  margin-bottom: 1.2rem;
+}
+
+.form-puma label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.form-puma input,
+.form-puma select {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #0a0a0a;
+  border: 1px solid #333333;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border: none;
+  padding: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #E0001A;
+  color: #ffffff;
+}
+
+.lista-contacto {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.lista-contacto li {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.lista-contacto a {
+  color: #E0001A;
+  text-decoration: none;
+}
+
+/* Pie de Página */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #050505;
+  color: #555555;
+  font-size: 0.85rem;
+  border-top: 1px solid #141414;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .grid-proyecto,
+  .seccion-formulario {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+}
+/* Tarjetas Ultra Compactas (3 columnas) */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;              /* Espacio mínimo entre tarjetas */
+  max-width: 900px;         /* Ancho máximo más angosto para compactar la fila */
+  margin: 0 auto;
+  padding: 0.8rem;
+}
+
+.tarjeta-producto {
+  background: #121212;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #222222;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagen-box {
+  height: 180px;            /* Reducido de 180px/200px a solo 120px */
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.imagen-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.info-box {
+  padding: 0.6rem 0.8rem;   /* Relleno interno muy compacto */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.info-box h3 {
+  font-size: 0.88rem;       /* Título de menor tamaño */
+  margin-bottom: 0.2rem;
+  color: #ffffff;
+}
+
+.info-box p {
+  font-size: 0.75rem;       /* Descripción pequeña */
+  color: #a0a0a0;
+  margin-bottom: 0.6rem;
+  line-height: 1.2;
+}
+
+.precio-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.precio {
+  font-size: 0.95rem;       /* Tamaño de precio reducido */
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.btn-cart {
+  padding: 0.25rem 0.6rem;  /* Botón pequeño y cómodo */
+  font-size: 0.75rem;
+}
+.seccion-nosotros {
+  display: flex;
+  min-height: 100vh; /* Ocupa la pantalla completa */
+  width: 100%;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center;
+  background-color: #000; /* Fondo negro como tu diseño */
+  color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Columna de la imagen (Izquierda) */
+.nosotros-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros-imagen img {
+  width: 100%;
+  max-width: 500px; /* Ajusta según el tamaño deseado */
+  height: auto;
+  object-fit: cover;
+}
+
+/* Columna del texto (Derecha) */
+.nosotros-texto {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.nosotros-texto h2 {
+  color: #e11919; /* Rojo PUMA */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.nosotros-texto p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Diseño adaptativo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .seccion-nosotros {
+    flex-direction: column; /* Cambia a columna en móviles */
+    min-height: auto;
+    padding: 4rem 1rem;
+  }
+}
