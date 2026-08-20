@@ -65,7 +65,7 @@ body {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.6)),
-              url('https://d3jky06km58rdx.cloudfront.net/assets/images/store/san-salvador/zCFtCvj0UiQnfK5KP7tWcqoHXMohcUAHJYsYyVbO.webp') center/cover; no-repeat;
+              url('https://d3jky06km58rdx.cloudfront.net/assets/images/store/san-salvador/zCFtCvj0UiQnfK5KP7tWcqoHXMohcUAHJYsYyVbO.webp') center/cover; 
  min-height: 120vh;
   display: flex;
   align-items: center;
